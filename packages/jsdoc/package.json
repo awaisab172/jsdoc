@@ -30,13 +30,16 @@
     "requizzle": "^0.2.3",
     "strip-bom": "^4.0.0",
     "strip-json-comments": "^3.0.1",
-    "taffydb": "2.6.2"
+    "taffydb": "2.6.2",
+    "snyk": "^1.316.1"
   },
   "engines": {
     "node": ">=8.15.0"
   },
   "scripts": {
-    "test": "gulp"
+    "test": "gulp",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "bin": {
     "jsdoc": "./jsdoc.js"
@@ -56,5 +59,6 @@
       "name": "Jeff Williams",
       "email": "jeffrey.l.williams@gmail.com"
     }
-  ]
+  ],
+  "snyk": true
 }
