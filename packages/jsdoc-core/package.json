@@ -16,7 +16,9 @@
     "url": "git+https://github.com/jsdoc/jsdoc.git"
   },
   "scripts": {
-    "test": "echo \"Error: run tests from root\" && exit 1"
+    "test": "echo \"Error: run tests from root\" && exit 1",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "bugs": {
     "url": "https://github.com/jsdoc/jsdoc/issues"
@@ -27,7 +29,9 @@
     "ow": "^0.13.2",
     "strip-bom": "^4.0.0",
     "strip-json-comments": "^3.0.1",
-    "yargs-parser": "^14.0.0"
+    "yargs-parser": "^14.0.0",
+    "snyk": "^1.316.1"
   },
-  "gitHead": "81a824eb0968851f836fc6069376d0337775f9ba"
+  "gitHead": "81a824eb0968851f836fc6069376d0337775f9ba",
+  "snyk": true
 }
